@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-08 10:25:49 AM"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtUFFCVEJLVjsyMDIzLTAzLTA4OzA4OjI4OjQ0IEFNOzMwMjE="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtUFFCVEJLVjsyMDIzLTAzLTA4OzEwOjI1OjQ5IEFNOzM7MzEyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &gt; b &amp;&amp; a &gt; c">
+                <then>
+                    <output expression="a" newline="True"/>
+                    <output expression="b" newline="True"/>
+                    <output expression="c" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b &gt; a &amp;&amp; b &gt; c">
+                        <then>
+                            <output expression="b" newline="True"/>
+                            <output expression="c" newline="True"/>
+                            <output expression="a" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="c" newline="True"/>
+                            <output expression="a" newline="True"/>
+                            <output expression="b" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
